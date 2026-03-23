@@ -1,27 +1,33 @@
 "use client"
+
 import { useEffect, useRef } from "react"
 
-export default function Music() {
+export default function Music({ shouldPlay }) {
   const audioRef = useRef(null)
 
   useEffect(() => {
-    const playMusic = () => {
+    const playAudio = () => {
       if (audioRef.current) {
         audioRef.current.volume = 0.8
-        audioRef.current.play()
+        audioRef.current.play().catch(() => {})
       }
     }
 
-    document.addEventListener("click", playMusic)
+    if (shouldPlay) {
+      playAudio()
+
+      // fallback: user interaction trigger
+      window.addEventListener("click", playAudio)
+    }
 
     return () => {
-      document.removeEventListener("click", playMusic)
+      window.removeEventListener("click", playAudio)
     }
-  }, [])
+  }, [shouldPlay])
 
   return (
-    <audio ref={audioRef} loop>
-      <source src="/bg.mp3" type="audio/mp3" />
+    <audio ref={audioRef} preload="auto">
+      <source src="/bg.mp3" type="audio/mpeg" />
     </audio>
   )
 }
