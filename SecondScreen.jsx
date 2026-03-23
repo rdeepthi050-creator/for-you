@@ -41,7 +41,8 @@ export default function SecondScreen({ onNext }) {
                     transition={{ duration: 0.8 }}
                     className="text-4xl md:text-5xl text-center mb-10 max-w-3xl text-foreground leading-tight font-medium"
                 >
-                    Something I wanted to share
+                    I don't flirt... but for you,i might break all my rules. hehehe,i mean i flirt with others, but not as much as i flirt with you,
+                    what to do i'm friend with someone's dream girl...;) MAYBE THEY CALL THIS LOVE...:)
                 </motion.h1>
 
                 {/* Button */}
