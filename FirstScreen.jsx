@@ -41,7 +41,7 @@ export default function FirstScreen({ onNext }) {
                     transition={{ delay: 0.3, duration: 0.8 }}
                     className="text-5xl md:text-6xl text-center mb-6 max-w-3xl text-balance leading-tight text-foreground font-medium"
                 >
-                    I made something
+                    I made something again...:)
                     <span className="block text-primary">for you</span>
                 </motion.h1>
 
@@ -52,7 +52,7 @@ export default function FirstScreen({ onNext }) {
                     transition={{ delay: 0.5, duration: 0.8 }}
                     className="text-lg text-foreground/90 text-center max-w-md mb-10 font-light"
                 >
-                    Something small... but straight from the heart :)
+                    I don't usually get distracted...but you're making it very hard to behave
                 </motion.p>
 
                 {/* button */}
