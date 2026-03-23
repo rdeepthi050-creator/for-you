@@ -4,7 +4,7 @@ export const dynamic = "force-static"
 
 import { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
-import { TextAnimate } from "./ui/text-animate"
+import { TextAnimate } from "./text-animate"
 
 const lyrics = [
     { text: "When all I dream of is your eyes", duration: 4800, anim: 2.5 },
