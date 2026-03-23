@@ -1,5 +1,5 @@
 import { Shantell_Sans } from "next/font/google";
-import "./globals.css";
+import "../globals.css";
 
 const shantellSans = Shantell_Sans({
   subsets: ["latin"],
