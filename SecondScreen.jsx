@@ -18,7 +18,7 @@ export default function SecondScreen({ onNext }) {
                     <motion.div
                         className="absolute inset-2 rounded-full bg-linear-to-br from-secondary/30 to-primary/10 backdrop-blur-md"
                     animate={{ scale: [1, 1.15, 1] }}
-                    transition={{ duration: 3, repeat: Infinity, ease: "easeInOut", }}
+                    transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
                     />
                     <motion.div
                         animate={{
